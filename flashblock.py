@@ -1,6 +1,6 @@
 import requests
 from config import *
-from redismanager import RedisHelper
+from RedisHelper import RedisHelper
 
 
 url = "http://192.168.111.126/admin/blinker.php"

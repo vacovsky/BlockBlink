@@ -102,9 +102,4 @@ class BlinkControl:
 
 
 if __name__ == '__main__':
-    GPIO.setwarnings(False)
-    GPIO.setmode(GPIO.BCM)
-    GPIO.setup(17, GPIO.OUT)
-    GPIO.setup(27, GPIO.OUT)
-    GPIO.setup(22, GPIO.OUT)
-    # blink_purple(1)
+    BlinkControl().blink(base_color="green", flash_color="red", count=100, interval=0.05)

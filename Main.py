@@ -1,42 +1,30 @@
-from redismanager import RedisHelper
+from RedisHelper import RedisHelper
+from BlinkControl import BlinkControl
 import json
-import sys
+from config import *
 
 
 class Main:
     redis = RedisHelper()
+    blinker = BlinkControl()
 
     def __init_(self):
-        self.last_count = get_current_count()
+        pass
 
     def listen(self):
-        self.redis.subscribe('BlinkBlock')
+        self.redis.subscribe(PUBSUB_NAME)
         for message in self.redis.PubSub.listen():
             data = message["data"]
             if data == 1:
                 continue
             datastr = data.decode('utf8').replace("'", '"')
             datadict = json.loads(datastr)
-            print(datadict["base_color"])
-            print(datadict["flash_color"])
-            print(datadict["count"])
-            print(datadict["interval"])
 
-            # self.blink(base_color="green", flash_color="red", count=1, interval=0.05)
-
-    
-    def check_blocked_counter(self):
-        pass
-        """global last_count
-                                print(last_count)
-                                current_count = get_current_count()
-                                if current_count > last_count:
-                                    print(current_count, ' > ', last_count)
-                                    blink_purple(current_count - last_count)
-                                    last_count = current_count
-                        
-                                elif current_count < last_count:
-                                    last_count = 0"""
+            self.blinker.blink(
+                base_color=datadict["base_color"],
+                flash_color=datadict["flash_color"],
+                count=datadict["count"],
+                interval=datadict["interval"])
 
 
 if __name__ == '__main__':
