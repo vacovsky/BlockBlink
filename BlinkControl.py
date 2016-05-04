@@ -14,7 +14,6 @@ class BlinkControl:
     def blink(self, base_color="green", flash_color="red", count=1, interval=0.05):
         blinked = 0
         while blinked <= count:
-            time.sleep(interval)
             if base_color == "green":
                 self.blink_green()
             elif base_color == "red":
@@ -34,7 +33,6 @@ class BlinkControl:
             elif base_color == "off":
                 self.blink_off()
 
-            time.sleep(interval)
             if flash_color == "green":
                 self.blink_green()
             elif flash_color == "red":
@@ -62,46 +60,53 @@ class BlinkControl:
     17 = green, 22 = blue, 27 = red
     """
 
-    def blink_blue(self):
+    def blink_blue(self, interval=0.05):
         GPIO.output(17, 0)
         GPIO.output(27, 0)
         GPIO.output(22, 1)
+        time.sleep(interval)
         self.blink_off()
 
-    def blink_red(self):
+    def blink_red(self, interval=0.05):
         GPIO.output(17, 0)
         GPIO.output(27, 1)
         GPIO.output(22, 0)
+        time.sleep(interval)
         self.blink_off()
 
-    def blink_yellow(self):
+    def blink_yellow(self, interval=0.05):
         GPIO.output(17, 1)
         GPIO.output(27, 1)
         GPIO.output(22, 0)
+        time.sleep(interval)
         self.blink_off()
 
-    def blink_green(self):
+    def blink_green(self, interval=0.05):
         GPIO.output(17, 1)
         GPIO.output(27, 0)
         GPIO.output(22, 0)
+        time.sleep(interval)
         self.blink_off()
 
-    def blink_white(self):
+    def blink_white(self, interval=0.05):
         GPIO.output(17, 1)
         GPIO.output(27, 1)
         GPIO.output(22, 1)
+        time.sleep(interval)
         self.blink_off()
 
-    def blink_purple(self):
+    def blink_purple(self, interval=0.05):
         GPIO.output(17, 0)
         GPIO.output(27, 1)
         GPIO.output(22, 1)
+        time.sleep(interval)
         self.blink_off()
 
-    def blink_teal(self):
+    def blink_teal(self, interval=0.05):
         GPIO.output(17, 1)
         GPIO.output(27, 0)
         GPIO.output(22, 1)
+        time.sleep(interval)
         self.blink_off()
 
     def blink_off(self):
