@@ -15,40 +15,40 @@ class BlinkControl:
         blinked = 0
         while blinked <= count:
             if base_color == "green":
-                self.blink_green()
+                self.blink_green(interval)
             elif base_color == "red":
-                self.blink_red()
+                self.blink_red(interval)
             elif base_color == "purple":
-                self.blink_purple()
+                self.blink_purple(interval)
             elif base_color == "teal":
-                self.blink_teal()
+                self.blink_teal(interval)
             elif base_color == "green":
-                self.blink_green()
+                self.blink_green(interval)
             elif base_color == "blue":
-                self.blink_blue()
+                self.blink_blue(interval)
             elif base_color == "white":
-                self.blink_white()
+                self.blink_white(interval)
             elif base_color == "yellow":
-                self.blink_yellow()
+                self.blink_yellow(interval)
             elif base_color == "off":
-                self.blink_off()
+                self.blink_off(interval)
 
             if flash_color == "green":
-                self.blink_green()
+                self.blink_green(interval)
             elif flash_color == "red":
-                self.blink_red()
+                self.blink_red(interval)
             elif flash_color == "purple":
-                self.blink_purple()
+                self.blink_purple(interval)
             elif flash_color == "teal":
-                self.blink_teal()
+                self.blink_teal(interval)
             elif flash_color == "green":
-                self.blink_green()
+                self.blink_green(interval)
             elif flash_color == "blue":
-                self.blink_blue()
+                self.blink_blue(interval)
             elif flash_color == "white":
-                self.blink_white()
+                self.blink_white(interval)
             elif flash_color == "yellow":
-                self.blink_yellow()
+                self.blink_yellow(interval)
             elif flash_color == "off":
                 self.blink_off()
 
