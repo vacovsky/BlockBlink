@@ -55,6 +55,7 @@ class BlinkControl:
                 self.blink_off()
 
             blinked += 1
+            self.blink_off()
         print(blinked)
 
     """
