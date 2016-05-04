@@ -16,4 +16,4 @@ if socket.gethostname() == "vacojaro":
     GRAVITY_LIST = "gravity.list"
 else:
     LOG_LOCATION = "/var/log/pihole.log"
-    GRAVITY_LIST = "/etc/pihole/gravity.list"
+    GRAVITY_LIST = "/etc/pihole/gravity\\.list"

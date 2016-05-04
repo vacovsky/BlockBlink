@@ -25,6 +25,8 @@ class Main:
                 flash_color=datadict["flash_color"],
                 count=datadict["count"],
                 interval=datadict["interval"])
+            print("Blinking: Base: %s, Flash: %s, Count: %s, Interval: %s" % datadict[
+                  "base_color"], datadict["flash_color"], datadict["count"], datadict["count"])
 
 
 if __name__ == '__main__':
