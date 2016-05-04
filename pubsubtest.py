@@ -6,8 +6,8 @@ import time
 total = 0
 sub_name = "BlinkBlock"
 
-message_demo = {"flash_color": "green",
-                "base_color": "blue",
+message_demo = {"flash_color": "off",
+                "base_color": "yellow",
                 "count": 5,
                 "interval": 0.5}
 

@@ -50,7 +50,7 @@ class BlinkControl:
             elif flash_color == "yellow":
                 self.blink_yellow(interval)
             elif flash_color == "off":
-                self.blink_off()
+                self.blink_off(interval)
 
             blinked += 1
             self.blink_off()
@@ -109,10 +109,11 @@ class BlinkControl:
         time.sleep(interval)
         self.blink_off()
 
-    def blink_off(self):
+    def blink_off(self, interval=0):
         GPIO.output(17, 0)
         GPIO.output(27, 0)
         GPIO.output(22, 0)
+        time.sleep(interval)
 
 
 if __name__ == '__main__':
