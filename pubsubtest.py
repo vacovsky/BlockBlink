@@ -6,10 +6,10 @@ import time
 total = 0
 sub_name = "BlinkBlock"
 
-message_demo = {"flash_color": "red",
-                "base_color": "blue",
-                "count": 50,
-                "interval": 0.1}
+message_demo = {"flash_color": "blue",
+                "base_color": "red",
+                "count": 5,
+                "interval": 0.05}
 
 
 if __name__ == '__main__':

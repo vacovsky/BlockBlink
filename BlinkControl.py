@@ -66,41 +66,49 @@ class BlinkControl:
         GPIO.output(17, 0)
         GPIO.output(27, 0)
         GPIO.output(22, 1)
+        self.blink_off()
 
     def blink_red(self):
         GPIO.output(17, 0)
         GPIO.output(27, 1)
         GPIO.output(22, 0)
+        self.blink_off()
 
     def blink_yellow(self):
         GPIO.output(17, 1)
         GPIO.output(27, 1)
         GPIO.output(22, 0)
+        self.blink_off()
 
     def blink_green(self):
         GPIO.output(17, 1)
         GPIO.output(27, 0)
         GPIO.output(22, 0)
+        self.blink_off()
 
     def blink_white(self):
         GPIO.output(17, 1)
         GPIO.output(27, 1)
         GPIO.output(22, 1)
+        self.blink_off()
 
     def blink_purple(self):
         GPIO.output(17, 0)
         GPIO.output(27, 1)
         GPIO.output(22, 1)
+        self.blink_off()
 
     def blink_teal(self):
         GPIO.output(17, 1)
         GPIO.output(27, 0)
         GPIO.output(22, 1)
+        self.blink_off()
 
     def blink_off(self):
         GPIO.output(17, 0)
         GPIO.output(27, 0)
         GPIO.output(22, 0)
+        self.blink_off()
 
 
 if __name__ == '__main__':
