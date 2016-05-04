@@ -54,4 +54,4 @@ class PiHole:
 if __name__ == '__main__':
     p = PiHole()
     p.monitor()
-    #print(p.calc_blocked_today())
+    # print(p.calc_blocked_today())

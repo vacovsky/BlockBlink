@@ -5,6 +5,7 @@ import time
 class BlinkControl:
 
     def __init__(self):
+        GPIO.cleanup()
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(17, GPIO.OUT)
@@ -55,6 +56,8 @@ class BlinkControl:
                 self.blink_off()
 
             blinked += 1
+            print(blinked)
+            #GPIO.cleanup()
 
     """
     17 = green, 22 = blue, 27 = red
@@ -102,4 +105,4 @@ class BlinkControl:
 
 
 if __name__ == '__main__':
-    BlinkControl().blink(base_color="green", flash_color="red", count=100, interval=0.05)
+    BlinkControl().blink(base_color="off", flash_color="yellow", count=100, interval=0.05)

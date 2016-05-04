@@ -14,6 +14,7 @@ class Main:
     def listen(self):
         self.redis.subscribe(PUBSUB_NAME)
         for message in self.redis.PubSub.listen():
+            print("%s" % message)
             data = message["data"]
             if data == 1:
                 continue
@@ -30,4 +31,5 @@ class Main:
 
 
 if __name__ == '__main__':
+    prin("Starting LED listener for PUBSUB: %s." % PUBSUB_NAME)
     Main().listen()

@@ -1,63 +1,55 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
 lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-gravity.list
-pihole.log
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*,cover
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
 target/
-
+.coverage.*
+*.spec
+parts/
+# PyInstaller
+gravity.list
+*,cover
+*.log
+pihole.log
+# Django stuff:
+# C extensions
+/.phpintel
+# Installer logs
+.eggs/
+# Distribution / packaging
+lib64/
+# Byte-compiled / optimized / DLL files
+*$py.class
+pip-delete-this-directory.txt
+nosetests.xml
+develop-eggs/
+build/
+pip-log.txt
+var/
+eggs/
+coverage.xml
+*.so
+__pycache__/
+.installed.cfg
+*.egg-info/
+.hypothesis/
+dist/
+# Translations
+docs/_build/
+*.pot
+*.manifest
+*.mo
+# Sphinx documentation
+*.egg
+.tox/
+sdist/
+*.py[cod]
 #Ipython Notebook
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+.cache
 .ipynb_checkpoints
+env/
+.coverage
+.Python
+downloads/
+htmlcov/
+# Unit test / coverage reports
+# PyBuilder
+#  Usually these files are written by a python script from a template
