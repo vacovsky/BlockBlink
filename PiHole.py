@@ -13,12 +13,12 @@ class PiHole:
         self.day = datetime.datetime.today().weekday()
 
     def calc_blocked_today(self):
-        output = check_output("/usr/bin/cat " + LOG_LOCATION + " | /usr/bin/awk '/" +
+        output = check_output("/bin/cat " + LOG_LOCATION + " | /usr/bin/awk '/" +
                               GRAVITY_LIST + "/ && !/address/ {print $6}' | wc -l", shell=True)
         return int(output)
 
     def calc_queries_today(self):
-        stuff = check_output("/usr/bin/cat " + LOG_LOCATION +
+        stuff = check_output("/bin/cat " + LOG_LOCATION +
                              " | /usr/bin/awk '/query/ {print $6}' | wc -l", shell=True)
         return int(stuff)
 
