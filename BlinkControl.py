@@ -5,7 +5,6 @@ import time
 class BlinkControl:
 
     def __init__(self):
-        GPIO.cleanup()
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(17, GPIO.OUT)

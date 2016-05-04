@@ -31,5 +31,5 @@ class Main:
 
 
 if __name__ == '__main__':
-    prin("Starting LED listener for PUBSUB: %s." % PUBSUB_NAME)
+    print("Starting LED listener for PUBSUB: %s." % PUBSUB_NAME)
     Main().listen()
