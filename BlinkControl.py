@@ -108,7 +108,6 @@ class BlinkControl:
         GPIO.output(17, 0)
         GPIO.output(27, 0)
         GPIO.output(22, 0)
-        self.blink_off()
 
 
 if __name__ == '__main__':
