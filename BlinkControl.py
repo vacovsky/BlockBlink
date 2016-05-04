@@ -35,23 +35,23 @@ class BlinkControl:
                 self.blink_off()
 
             time.sleep(interval)
-            if base_color == "green":
+            if flash_color == "green":
                 self.blink_green()
-            elif base_color == "red":
+            elif flash_color == "red":
                 self.blink_red()
-            elif base_color == "purple":
+            elif flash_color == "purple":
                 self.blink_purple()
-            elif base_color == "teal":
+            elif flash_color == "teal":
                 self.blink_teal()
-            elif base_color == "green":
+            elif flash_color == "green":
                 self.blink_green()
-            elif base_color == "blue":
+            elif flash_color == "blue":
                 self.blink_blue()
-            elif base_color == "white":
+            elif flash_color == "white":
                 self.blink_white()
-            elif base_color == "yellow":
+            elif flash_color == "yellow":
                 self.blink_yellow()
-            elif base_color == "off":
+            elif flash_color == "off":
                 self.blink_off()
 
             blinked += 1
