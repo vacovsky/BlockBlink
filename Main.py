@@ -14,7 +14,6 @@ class Main:
     def listen(self):
         self.redis.subscribe(PUBSUB_NAME)
         for message in self.redis.PubSub.listen():
-            print("%s" % message)
             data = message["data"]
             if data == 1:
                 continue
@@ -26,6 +25,11 @@ class Main:
                 flash_color=datadict["flash_color"],
                 count=datadict["count"],
                 interval=datadict["interval"])
+
+            print([datadict["base_color"],
+                   datadict["flash_color"],
+                   datadict["count"],
+                   datadict["interval"]])
 
 
 if __name__ == '__main__':
