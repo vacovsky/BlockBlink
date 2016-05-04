@@ -55,8 +55,7 @@ class BlinkControl:
                 self.blink_off()
 
             blinked += 1
-            print(blinked)
-            #GPIO.cleanup()
+        print(blinked)
 
     """
     17 = green, 22 = blue, 27 = red
