@@ -41,8 +41,8 @@ class PiHole:
                     message = {
                         "count": cur_count - self.last_count,
                         "interval": .05,
-                        "flash_color": "red",
-                        "base_color": "white"
+                        "flash_color": "blue",
+                        "base_color": "red"
                     }
                     self.last_count = cur_count
                     self._redis.publish(PUBSUB_NAME, message)
