@@ -5,12 +5,19 @@ This was created one evening because I wanted a snazzy way to blink the multicol
 ##Setup##
 
 1. Install Redis server locally or otherwise.
+
 2. Add the Redis server IP to the config.py file.
+
 3. Symlink pihole.log and gravity.list files to the same directory as PiHole.py: 
+
 ```link -s /var/log/pihole.log```
+
 ```link -s /etc/pihole/gravity.list```
+
 4. Run ```python3 PiHole.py``` on the device hosting PiHole.
+
 5. On the device with the LED connected, run ```python3 Main.py``` (may require permission elevation).
+
 6. To add any other event blinks (different colors, intervals, counts, etc), just publish to the same PubSub as is specified in ```config.py```, where Main.py listens.
 
 ###PubSub message format
