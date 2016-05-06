@@ -1,6 +1,6 @@
 #blockblink#
 
-This was created one evening because I wanted a snazzy way to blink the LED connected to my Pi.  
+This was created one evening because I wanted a snazzy way to blink the multicolor LED connected to my Pi via GPio.  I use it to monitor various events on my network from random scripts, but primarily use it to see when ads are blocked, and as a visual way to monitor the status of various internal network services.
 
 #Setup#
 
