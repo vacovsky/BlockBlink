@@ -10,9 +10,9 @@ This was created one evening because I wanted a snazzy way to blink the multicol
 
 3. Symlink pihole.log and gravity.list files to the same directory as PiHole.py: 
 
-```link -s /var/log/pihole.log```
+```ln -s /var/log/pihole.log```
 
-```link -s /etc/pihole/gravity.list```
+```ln -s /etc/pihole/gravity.list```
 
 4. Run ```python3 PiHole.py``` on the device hosting PiHole.
 
