@@ -54,7 +54,6 @@ class BlinkControl:
 
             blinked += 1
             self.blink_off()
-        print(blinked)
 
     """
     17 = green, 22 = blue, 27 = red

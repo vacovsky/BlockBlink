@@ -1,15 +1,14 @@
 from config import *
 from RedisHelper import RedisHelper
-import time
 
 
 total = 0
 sub_name = "BlinkBlock"
 
-message_demo = {"flash_color": "blue",
-                "base_color": "yellow",
-                "count": 500,
-                "interval": 0.02}
+message_demo = {"flash_color": "red",
+                "base_color": "purple",
+                "count": 50,
+                "interval": 0.04}
 
 
 if __name__ == '__main__':
